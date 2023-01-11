@@ -1,0 +1,12 @@
+.titleWords {
+    font: Montserrat, sans-serif;
+}
+
+.titleStrong {
+    color: rgb(56, 205, 208);
+}
+
+.landingContainer {
+    background-color: yellow;
+    transition: all 0.7s ease-in-out;
+}
