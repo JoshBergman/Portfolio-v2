@@ -1,0 +1,38 @@
+.btnSlide {
+    background-color: transparent;
+    color: rgb(56, 205, 208);
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+    border: 2px solid rgb(56, 205, 208);
+    font-size: 34px;
+}
+
+.btnSlide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgb(56, 205, 208), rgb(132, 220, 224));
+
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: transform 150ms ease-in-out;
+}
+
+.btnSlide:hover::before,
+.btnSlide:focus::before {
+    transform: scaleX(1);
+}
+
+.btnSlide:hover,
+.btnSlide:focus {
+    color: white;
+}

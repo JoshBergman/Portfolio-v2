@@ -1,5 +1,9 @@
 .titleWords {
-    font: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
+    color: rgb(36, 57, 57);
+    font-size: 56px;
+    margin: 0;
+    text-align: left;
 }
 
 .titleStrong {
@@ -7,6 +11,22 @@
 }
 
 .landingContainer {
-    background-color: yellow;
     transition: all 0.7s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    /* background-color: green; */
+}
+
+.contentContainer {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 38vh;
+    margin-left: calc(40% - 370px);
+    /* background-color: pink; */
+}
+
+.spacerDiv {
+    height: 100vh;
+    width: 100%;
 }

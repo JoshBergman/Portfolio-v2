@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll";
 
 import styles from './AnchorButton.module.css';
 
@@ -9,10 +10,10 @@ interface AnchorButtonProps {
 
 export default function AnchorButton({children, href}:AnchorButtonProps) {
   return (
-    <a href={href}>
-        <button>
-            {children}
-        </button>
-    </a>
+    <Link smooth={true} to={href}>
+      <button className={styles.btnSlide}>
+        {children}
+      </button>
+    </Link>
   )
 }
