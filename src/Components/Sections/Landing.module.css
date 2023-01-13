@@ -15,7 +15,6 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    /* background-color: green; */
 }
 
 .contentContainer {
@@ -23,10 +22,21 @@
     height: fit-content;
     margin-top: 38vh;
     margin-left: calc(40% - 370px);
-    /* background-color: pink; */
 }
 
 .spacerDiv {
     height: 100vh;
     width: 100%;
+}
+
+.plugContainer {
+    width: 400px;
+    height: 40px;
+
+    position: absolute;
+    right: 0;
+    top: 8px;
+
+    display: flex; 
+    justify-content: space-evenly;
 }

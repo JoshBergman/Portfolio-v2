@@ -9,7 +9,7 @@
     z-index: 1;
     transition: color 150ms ease-in-out;
     border: 2px solid rgb(56, 205, 208);
-    font-size: 34px;
+    font-size: 28px;
 }
 
 .btnSlide::before {
