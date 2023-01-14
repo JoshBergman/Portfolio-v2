@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Landing from './Components/Sections/Landing';
+import Projects from './Components/Sections/Project';
 import Skills from './Components/Sections/Skills';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <React.Fragment>
       <Landing />
       <Skills />
+      <Projects />
     </React.Fragment>
   );
 }

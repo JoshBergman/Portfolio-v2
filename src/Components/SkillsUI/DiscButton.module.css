@@ -20,11 +20,15 @@
 }
 
 .btn:hover {
-    font-size: 220px;
+    font-size: 215px;
 }
 
 @media (max-width: 860px) {
     .btn {
         font-size: 150px;
+    }
+
+    .btn:hover {
+        font-size: 160px;
     }
 }
