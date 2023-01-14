@@ -1,0 +1,22 @@
+.projectContainer {
+    background-color: blue;
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.descContainer {
+    background-color: aqua;
+    width: 48%;
+    margin: 0 auto;
+}
+
+.thumbnailContainer {
+    background-color: aquamarine;
+    width: 48%;
+    margin: 0 auto;
+}
