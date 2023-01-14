@@ -39,10 +39,10 @@ export default function Landing() {
         <div className={styles.contentContainer}>
             <h1 className={styles.titleWords}>Hi, I'm <strong className={styles.titleStrong}>Josh.</strong></h1>
             <h2  className={styles.titleWords}>I'm a full stack developer.</h2>
-            <AnchorButton href="home">Projects</AnchorButton>
-            <AnchorButton href="home">Skills</AnchorButton>
-            <AnchorButton href="home">About</AnchorButton>
-            <AnchorButton href="home">Contact</AnchorButton>
+            <AnchorButton href="projects">Projects</AnchorButton>
+            <AnchorButton href="skills">Skills</AnchorButton>
+            <AnchorButton href="about">About</AnchorButton>
+            <AnchorButton href="contact">Contact</AnchorButton>
         </div>
     </div>
     <div className={styles.spacerDiv} />

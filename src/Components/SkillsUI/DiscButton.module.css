@@ -1,0 +1,30 @@
+.btn {
+    background-color: transparent;
+    border-color: transparent;
+    width: fit-content;
+    height: 150px;
+
+    margin: 0 auto;
+
+    color: rgb(7, 84, 86);
+    font-size: 200px;
+    transition: all 0.1s ease-in-out;
+}
+
+.icon {
+    margin: 0;
+}
+
+.btn:focus {
+    color: white;
+}
+
+.btn:hover {
+    font-size: 220px;
+}
+
+@media (max-width: 860px) {
+    .btn {
+        font-size: 150px;
+    }
+}

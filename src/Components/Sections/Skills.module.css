@@ -1,5 +1,76 @@
-.test {
-    height: 1000px;
+.skillsContainer {
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 40px;
     width: 100%;
-    background-color: yellow;
+    background-image: linear-gradient(rgb(56, 205, 208), rgb(132, 220, 224));
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.optionsDiv {
+    width: 45%;
+    min-width: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.rightSideContainer {
+    width: 45%;
+    height: fit-content;
+}
+
+.techDiv {
+    width: 100%;
+    height: 400px;
+    max-width: 640px;
+    min-width: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillsTitle {
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.instructions {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 860px) {
+    .skillsContainer {
+        flex-direction: column;
+    }
+    .optionsDiv {
+        margin: 0 auto;
+        min-width: 4px;
+    }
+    .rightSideContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .techDiv {
+        width: 80%;
+        min-width: 4px;
+    }
+}
+
+@media (max-width: 300px) {
+    .skillsContainer {
+        padding-bottom: 80px;
+    }
 }
