@@ -17,11 +17,24 @@ export default function Project() {
     desc: descriptions.apimonitor,
     techs: ["React", "Node.js", "MongoDB", "Express.js", "Typescript"],
     alternate: false,
+    site: "https://apimonitor.dev/",
+    frontend: "https://github.com/JoshBergman/Api-Monitor-Frontend",
+    backend: "https://github.com/JoshBergman/Api-Monitor-Backend"
+  };
+
+  const quickBudgetToolInfo: ProjectInfo = {
+    img: APIMonitor,
+    imgAlt: "Quick Budget Tool Thumbnail",
+    title: "Quick Budget Tool",
+    desc: descriptions.apimonitor,
+    techs: ["React", "Node.js", "Express.js"],
+    alternate: true
   };
 
   return (
     <div className={styles.projectsContainer} id="projects">
         <SingleProject ProjectInfo={APIMonitorInfo} />
+        <SingleProject ProjectInfo={quickBudgetToolInfo} />
     </div>
   );
 }

@@ -1,11 +1,12 @@
 .projectContainer {
-    width: 100%;
+    width: 80%;
     height: fit-content;
 
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
 
     margin-top: 100px;
     margin-bottom: 100px;
@@ -13,7 +14,8 @@
 
 .descContainer {
     width: 48%;
-    margin: 0 auto;
+    height: fit-content;
+    margin: auto;
 }
 
 .thumbnailContainer {
@@ -21,12 +23,24 @@
     margin: 0 auto;
 }
 
+.altDescContainer {
+    width: 48%;
+    margin: 0 auto;
+    transform: translateX(100%);
+}
+
+.altThumbnailContainer {
+    width: 48%;
+    margin: 0 auto;
+    transform: translateX(-100%);
+}
+
 .img {
     width: 100%;
 }
 
 .imgContainer {
-    width: 90%;
+    width: 80%;
     height: fit-content;
     margin: 0 auto;
 
@@ -45,11 +59,12 @@
 
 .desc {
     color: rgb(36, 57, 57);
-    font-size: 15px;
+    font-size: 18px;
     font-family: Montserrat, sans-serif;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 15px;
+    text-align: center;
 }
 
 .tech {
@@ -75,4 +90,74 @@
     display: block;
     margin-top: 12px;
     margin-bottom: -15px;
+}
+
+.linkButtonsDiv {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+}
+
+@media (max-width: 1200px) {
+    .projectContainer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .altDescContainer {
+        transform: none;
+        width: 80%;
+    }
+
+    .altThumbnailContainer {
+        transform: none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .descContainer {
+        width: 80%;
+    }
+
+    .thumbnailContainer {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .desc {
+        text-align: center;
+        font-size: 15;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .projectContainer {
+        flex-direction: column;
+    }
+
+    .altDescContainer {
+        transform: none;
+        width: 90%;
+    }
+
+    .altThumbnailContainer {
+        transform: none;
+        width: 90%;
+    }
+
+    .descContainer {
+        width: 90%;
+    }
+
+    .thumbnailContainer {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .desc {
+        max-width: 400px;
+    }
+
 }
