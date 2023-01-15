@@ -6,6 +6,8 @@ import { ProjectInfo } from '../ProjectsUI/SingleProject';
 import { descriptions } from './ProjectDescriptions';
 
 import APIMonitor from '../ProjectsUI/Thumbnails/APIMonitor.png';
+import QuickBudgetTool from '../ProjectsUI/Thumbnails/QuickBudgetTool.png';
+import MikesFrameService from '../ProjectsUI/Thumbnails/MikesFrameService.png';
 
 
 export default function Project() {
@@ -23,17 +25,31 @@ export default function Project() {
   };
 
   const quickBudgetToolInfo: ProjectInfo = {
-    img: APIMonitor,
+    img: QuickBudgetTool,
     imgAlt: "Quick Budget Tool Thumbnail",
     title: "Quick Budget Tool",
-    desc: descriptions.apimonitor,
+    desc: descriptions.quickbudgettool,
     techs: ["React", "Node.js", "Express.js"],
-    alternate: true
+    alternate: false,
+    site: "https://quickbudgettool.com/tool"
+  };
+
+  const MikesFrameServiceInfo: ProjectInfo = {
+    img: MikesFrameService,
+    imgAlt: "Mikes Frame Service Thumbnail",
+    title: "Mikes Frame Service",
+    desc: descriptions.mikesframeservice,
+    techs: ["React", "Node.js", "Express.js"],
+    alternate: true,
+    site: "https://mikesframe-25201.web.app/home",
+    frontend: "https://github.com/JoshBergman/MikesFrameServiceV2"
   };
 
   return (
     <div className={styles.projectsContainer} id="projects">
+        <h2 className={styles.title}>Projects</h2>
         <SingleProject ProjectInfo={APIMonitorInfo} />
+        <SingleProject ProjectInfo={MikesFrameServiceInfo} />
         <SingleProject ProjectInfo={quickBudgetToolInfo} />
     </div>
   );

@@ -10,15 +10,18 @@ import { MdEmail, MdContactPage } from 'react-icons/md';
 
 export default function Landing() {
     const [containerOpacity, setContainerOpacity] = useState(0);
+    const [containerTranslated, setContainerTranslated] = useState(-100);
 
     useEffect(() => {
         setTimeout(() => {
             setContainerOpacity(1);
-        }, 0.2);
+            setContainerTranslated(0)
+        }, 0.4);
     }, []);
     
     const containerStyle = {
-        opacity: containerOpacity
+        opacity: containerOpacity,
+        transform: `translateX(${containerTranslated}px)`
     };
 
     const links = {

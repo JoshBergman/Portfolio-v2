@@ -25,26 +25,27 @@
 
 .altDescContainer {
     width: 48%;
-    margin: 0 auto;
-    transform: translateX(100%);
+    transform: translateX(105%);
+    margin: auto;
 }
 
 .altThumbnailContainer {
     width: 48%;
     margin: 0 auto;
-    transform: translateX(-100%);
+    transform: translateX(-105%);
 }
 
 .img {
     width: 100%;
+    /* border: 4px solid rgb(7, 84, 86); */
+    box-shadow: 0 0 15px rgb(7, 84, 86);
+    margin-top: 10px;
 }
 
 .imgContainer {
     width: 80%;
     height: fit-content;
     margin: 0 auto;
-
-    border: 2px solid rgb(56, 205, 208);
 }
 
 .title {

@@ -44,7 +44,7 @@ export default function Skills() {
     } else if (showingBackend) {
       return <BackendBlips />
     } else {
-      return <p className={styles.instructions}>Select a part of the stack to view skills.</p>
+      return <p className={styles.instructions}>Click a part of the stack to view skills.</p>
     }
   };
 
