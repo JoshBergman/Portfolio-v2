@@ -32,7 +32,7 @@ export default function Landing() {
             <SocialPlug Icon={BsLinkedin} fontSize={30} link={links.linkedIn} top={2} />
             <SocialPlug Icon={FaGithubSquare} fontSize={34} link={links.gitHub} top={0} />
             <SocialPlug Icon={MdContactPage} fontSize={36} link={links.resume} downloader={true} top={0} />
-            <SocialPlug Icon={MdEmail} fontSize={40} link={links.email} top={-2} />
+            <SocialPlug Icon={MdEmail} fontSize={40} link={links.email} emailer={true} top={-2} />
         </div>
         <div className={styles.contentContainer}>
             <h1 className={styles.titleWords}>Hi, I'm <strong className={styles.titleStrong}>Josh.</strong></h1>

@@ -17,7 +17,8 @@ export default function Contact() {
         link: links.email,
         Icon: MdEmail,
         fontSize: currFontSize,
-        label: "Josh.Bergman1@pm.me"
+        label: "Josh.Bergman1@pm.me",
+        emailer: true
     };
 
     const linkedInInfo: LabeledPlugProps = {

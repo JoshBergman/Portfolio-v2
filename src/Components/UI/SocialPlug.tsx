@@ -9,9 +9,10 @@ interface SocialPlugProps {
     link: string;
     top?: number;
     downloader?: boolean;
+    emailer?: boolean;
 }
 
-export default function SocialPlug({Icon, fontSize, link, top, downloader}:SocialPlugProps) {
+export default function SocialPlug({Icon, fontSize, link, top, downloader, emailer}:SocialPlugProps) {
     const anchorStyle = {
         fontSize: fontSize,
     };
@@ -20,7 +21,7 @@ export default function SocialPlug({Icon, fontSize, link, top, downloader}:Socia
         top: top + 'px'
     };
 
-    if (downloader !== true) {
+    if (downloader !== true && emailer !== true) {
 return (
     <a 
     href={link}
@@ -32,6 +33,16 @@ return (
     </a>
   );
 
+    }
+    if (emailer === true) {
+        return (
+            <a 
+    href={link}
+    style={anchorStyle}
+    >
+        {<Icon className={styles.icon} style={iconStyle} />}
+    </a>
+        );
     } else {
 return (
     <a 

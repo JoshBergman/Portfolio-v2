@@ -9,6 +9,7 @@ export interface LabeledPlugProps {
     label: string;
     marginLeft?: number;
     downloader?: boolean;
+    emailer?: boolean;
 }
 
 interface ILabeledPlugProps {
@@ -24,6 +25,20 @@ export default function LabeledPlug({props}:ILabeledPlugProps) {
 
     if(props.marginLeft) {
         appliedStyles.marginLeft = props.marginLeft + "px";
+    }
+
+    if(props.emailer === true) {
+        return (
+        <div className={styles.plugContainer}>
+            <a 
+            href={props.link}
+            className={styles.anchor}
+            >
+            <Icon className={styles.icon} style={appliedStyles} />
+            <label className={styles.label}>{props.label}</label>
+            </a>
+        </div>
+        );
     }
 
     if(props.downloader !== true) {
