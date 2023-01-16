@@ -8,9 +8,10 @@ interface SocialPlugProps {
     fontSize: number;
     link: string;
     top?: number;
+    downloader?: boolean;
 }
 
-export default function SocialPlug({Icon, fontSize, link, top}:SocialPlugProps) {
+export default function SocialPlug({Icon, fontSize, link, top, downloader}:SocialPlugProps) {
     const anchorStyle = {
         fontSize: fontSize,
     };
@@ -19,7 +20,8 @@ export default function SocialPlug({Icon, fontSize, link, top}:SocialPlugProps) 
         top: top + 'px'
     };
 
-  return (
+    if (downloader !== true) {
+return (
     <a 
     href={link}
     target='_blank'
@@ -29,4 +31,18 @@ export default function SocialPlug({Icon, fontSize, link, top}:SocialPlugProps) 
         {<Icon className={styles.icon} style={iconStyle} />}
     </a>
   );
+
+    } else {
+return (
+    <a 
+    href={link}
+    download='Joshua-Bergman-Resume'
+    target="_blank"
+    rel="noreferrer"
+    style={anchorStyle}
+    >
+        {<Icon className={styles.icon} style={iconStyle} />}
+    </a>
+    );
+    }
 }

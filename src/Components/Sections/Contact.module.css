@@ -62,6 +62,12 @@
     height: fit-content;
     margin: 0 auto;
     margin-top: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.goUpDiv:hover {
+    transform: translateY(-4px);
 }
 
 .upIcon {

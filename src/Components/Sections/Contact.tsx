@@ -36,10 +36,11 @@ export default function Contact() {
     };
 
     const resumeInfo: LabeledPlugProps = {
-        link: "Placeholder",
+        link: links.resume,
         Icon: MdContactPage,
         fontSize: currFontSize,
-        label: "Resume"
+        label: "Resume",
+        downloader: true
     };
 
   return (
