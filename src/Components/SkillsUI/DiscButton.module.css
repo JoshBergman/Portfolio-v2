@@ -23,12 +23,36 @@
     font-size: 215px;
 }
 
+@media (max-width: 1200px) {
+    .btn {
+        font-size: 170px;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        font-size: 180px;
+    }
+}
+
 @media (max-width: 860px) {
     .btn {
         font-size: 150px;
     }
 
-    .btn:hover {
+    .btn:hover,
+    .btn:focus {
         font-size: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 100px;
+        height: 100px;
+    }
+
+    .btn:focus,
+    .btn:hover {
+        font-size: 110px;
     }
 }

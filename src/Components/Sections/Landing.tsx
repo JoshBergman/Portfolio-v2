@@ -3,6 +3,7 @@ import AnchorButton from '../UI/AnchorButton';
 import SocialPlug from '../UI/SocialPlug';
 
 import styles from './Landing.module.css';
+import { links } from '../UI/Links';
 
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
@@ -24,12 +25,6 @@ export default function Landing() {
         transform: `translateX(${containerTranslated}px)`
     };
 
-    const links = {
-        linkedIn: 'https://www.linkedin.com/in/joshua-bergman-399133191/',
-        gitHub: 'https://github.com/JoshBergman',
-        email: 'mailto:josh.bergman1@pm.me',
-    };
-
   return (
     <React.Fragment>
     <div id="home" className={styles.landingContainer} style={containerStyle}>
@@ -42,10 +37,12 @@ export default function Landing() {
         <div className={styles.contentContainer}>
             <h1 className={styles.titleWords}>Hi, I'm <strong className={styles.titleStrong}>Josh.</strong></h1>
             <h2  className={styles.titleWords}>I'm a full stack developer.</h2>
-            <AnchorButton href="skills">Skills</AnchorButton>
-            <AnchorButton href="projects">Projects</AnchorButton>
-            <AnchorButton href="about">About</AnchorButton>
-            <AnchorButton href="contact">Contact</AnchorButton>
+            <div className={styles.btn} >
+                <AnchorButton href="skills">Skills</AnchorButton>
+                <AnchorButton href="projects">Projects</AnchorButton>
+                <AnchorButton href="about">About</AnchorButton>
+                <AnchorButton href="contact">Contact</AnchorButton>
+            </div>
         </div>
     </div>
     <div className={styles.spacerDiv} />

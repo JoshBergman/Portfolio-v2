@@ -40,3 +40,56 @@
     display: flex; 
     justify-content: space-evenly;
 }
+
+.btn {
+    font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+
+    .contentContainer {
+        margin-left: 40px;
+    }
+
+    .titleWords {
+        font-size: 44px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .contentContainer {
+        margin: 0 auto;
+        margin-top: 38vh;
+    }
+
+    .titleWords {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .plugContainer {
+        width: 100%;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .titleWords {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 11px;
+        margin-left: 7%;
+    }
+}

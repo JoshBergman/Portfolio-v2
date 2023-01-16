@@ -9,6 +9,8 @@ interface DiscButtonProps {
 
 export default function DiscButton({onClick}:DiscButtonProps) {
   return (
-    <button onClick={onClick} className={styles.btn}><RiCoinLine className={styles.icon} /></button>
+    <button onClick={onClick} className={styles.btn}>
+      <RiCoinLine className={styles.icon} />
+    </button>
   )
 }

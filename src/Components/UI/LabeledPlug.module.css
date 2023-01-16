@@ -1,0 +1,32 @@
+.plugContainer {
+    width: fit-content;
+    margin: 20px;
+}
+
+.anchor {
+    text-decoration: none;
+}
+
+.icon {
+    color: rgb(56, 205, 208);
+    margin-bottom: -18px;
+    margin-right: 2px;
+}
+
+.label {
+    color: rgb(7, 84, 86);
+    margin: auto;
+    font-size: large;
+}
+
+.label:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 300px) {
+    .label {
+        font-size: medium;
+    }
+}
