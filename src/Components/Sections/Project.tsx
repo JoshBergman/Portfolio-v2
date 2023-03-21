@@ -5,12 +5,24 @@ import styles from './Project.module.css';
 import { ProjectInfo } from '../ProjectsUI/SingleProject';
 import { descriptions } from './ProjectDescriptions';
 
+import AlgoExample from '../ProjectsUI/Thumbnails/AlgoExample.png';
 import APIMonitor from '../ProjectsUI/Thumbnails/APIMonitor.png';
 import QuickBudgetTool from '../ProjectsUI/Thumbnails/QuickBudgetTool.png';
 import MikesFrameService from '../ProjectsUI/Thumbnails/MikesFrameService.png';
 
 
 export default function Project() {
+
+  const algoExample: ProjectInfo = {
+    img: AlgoExample,
+    imgAlt: "Algo Example thumbnail",
+    title: "Algo Example",
+    desc: descriptions.algoExample,
+    techs: ["React", "Typescript", "Collaborative"],
+    alternate: true,
+    site: "https://algoexample.com",
+    frontend: "https://github.com/JoshBergman/Algorithms-Explained"
+  };
   
   const APIMonitorInfo: ProjectInfo = {
     img: APIMonitor,
@@ -48,6 +60,7 @@ export default function Project() {
   return (
     <div className={styles.projectsContainer} id="projects">
         <h2 className={styles.title}>Projects</h2>
+        <SingleProject ProjectInfo={algoExample} />
         <SingleProject ProjectInfo={APIMonitorInfo} />
         <SingleProject ProjectInfo={MikesFrameServiceInfo} />
         <SingleProject ProjectInfo={quickBudgetToolInfo} />

@@ -1,7 +1,8 @@
 export const descriptions = {
     apimonitor: "Web-app that allows users to test their API's. User's are given the ability to use custom headers, body's, verbs, etc... Allows users to save API settings in the cloud for easy use anywhere, or the ability to save their settings in local storage for local use. Guest Credentials: user: \"guest\" | pass: \"guest\"",
     quickbudgettool: "Quick Budget Tool is exactly that! A tool designed to quickly estimate the average cost for someone to move to any given state and display the data in an easy-to-read format. The tool was later adapted to calculate many standardized budget types.",
-    mikesframeservice: "Project built for client. Serves as a landing page for a local vehicle frame shop and increased the conversion rate for new potential customers significantly. Website built to client's vision. Started as a full-stack app later optimized to frontend only for increased performance."
+    mikesframeservice: "Project built for client. Serves as a landing page for a local vehicle frame shop and increased the conversion rate for new potential customers significantly. Website built to client's vision. Started as a full-stack app later optimized to frontend only for increased performance.",
+    algoExample: "Visualizer and education resource for many popular algorithms and programming concepts. Originally inspired by other resources providing unhelpful explanations, nuance, and complications for algorithms such as TimSort. Algo Example’s goal is to give a simple and intuitive explanation for these concepts."
 };
 
 export const aboutMeDescriptions = {
