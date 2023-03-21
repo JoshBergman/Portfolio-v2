@@ -1,10 +1,10 @@
 .img {
-    width: 70px;
+    height: 80px;
 }
 
 .blipDiv {
     display: inline-block;
-    height: fit-content;
+    height: 100px;
     width: fit-content;
 
     margin: 22px;

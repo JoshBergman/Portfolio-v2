@@ -6,57 +6,52 @@ import FrontendBlips from '../SkillsUI/FrontendBlips';
 import ToolsBlips from '../SkillsUI/ToolsBlips';
 import BackendBlips from '../SkillsUI/BackendBlips';
 
+//button icons
+import { MdMonitor } from 'react-icons/md';
+import { HiOutlineWrenchScrewdriver } from 'react-icons/hi2';
+import { AiOutlineDatabase } from 'react-icons/ai';
+
+
 export default function Skills() {
-  const [showingFrontend, setShowingFrontend] = useState(false);
-  const [showingTools, setShowingTools] = useState(false);
-  const [showingBackend, setShowingBackend] = useState(false);
-  const [currTitle, setCurrTitle] = useState("Skills");
+  const [currSkill, setCurrSkill] = useState("Choose A Skill");
+  const [currOpacity, setCurrOpacity] = useState(1);
 
-  const resetStates = () => {
-    setShowingFrontend(false);
-    setShowingTools(false);
-    setShowingBackend(false);
+  const TechClickHandler = (thisSkill: string) => {
+    setCurrOpacity(0);
+    setTimeout(() => {
+      setCurrSkill(thisSkill)
+      setTimeout(() => setCurrOpacity(1), 100)
+    }, 100
+  );
   };
 
-  const FrontendClickHandler = () => {
-    resetStates();
-    setCurrTitle("Frontend");
-    setShowingFrontend(true);
-  };
-
-  const ToolsClickHandler = () => {
-    resetStates();
-    setCurrTitle("Tools");
-    setShowingTools(true);
-  };
-
-  const BackendClickHandler = () => {
-    resetStates();
-    setCurrTitle("Backend");
-    setShowingBackend(true);
+  const fadeStyle = {
+    opacity: currOpacity
   };
 
   const getContent = () => {
-    if(showingFrontend){
-      return <FrontendBlips />
-    } else if (showingTools) {
-      return <ToolsBlips />
-    } else if (showingBackend) {
-      return <BackendBlips />
-    } else {
-      return <p className={styles.instructions}>Click a part of the stack to view skills.</p>
+    switch (currSkill){
+    case "Frontend":
+      return <FrontendBlips />;
+    case "Tools":
+      return <ToolsBlips />;
+    case "Backend": 
+     return <BackendBlips />;
+    default:
+      return <p className={styles.instructions}>Click a part of the tech stack to view skills.</p>;
     }
   };
 
   return (
     <div id="skills" className={styles.skillsContainer}>
+      <h2 className={styles.title}>Skills</h2>
       <div className={styles.optionsDiv}>
-        <DiscButton onClick={FrontendClickHandler} />
-        <DiscButton onClick={ToolsClickHandler} />
-        <DiscButton onClick={BackendClickHandler} />
+        <DiscButton label={"Frontend"} Icon={MdMonitor} onClick={() => TechClickHandler("Frontend")} />
+        <DiscButton label={"Tools"} Icon={HiOutlineWrenchScrewdriver} onClick={() => TechClickHandler("Tools")} />
+        <DiscButton label={"Backend"} Icon={AiOutlineDatabase} onClick={() => TechClickHandler("Backend")} />
       </div>
-      <div className={styles.rightSideContainer}>
-        <h2 className={styles.skillsTitle}>{currTitle}</h2>
+      <div className={styles.rightSideContainer} style={fadeStyle}>
+        <h2 className={styles.title}>{currSkill}</h2>
         <div className={styles.techDiv}>
           {getContent()}
         </div>

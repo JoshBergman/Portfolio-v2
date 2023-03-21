@@ -1,58 +1,44 @@
-.btn {
-    background-color: transparent;
-    border-color: transparent;
-    width: fit-content;
-    height: 150px;
-
-    margin: 0 auto;
-
-    color: rgb(7, 84, 86);
-    font-size: 200px;
-    transition: all 0.1s ease-in-out;
+.btnCard {
+    margin: 5px;
 }
 
 .icon {
-    margin: 0;
+    display: block;
+    font-size: 120px;
+}
+
+.btn {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0 auto;
+    color: rgb(7, 84, 86);
+    transition: all 80ms ease-in-out;
 }
 
 .btn:focus {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .btn:hover {
-    font-size: 215px;
+    transform: translate(2px, 2px);
+    cursor: pointer;
+    color: rgb(239, 239, 239);
 }
 
-@media (max-width: 1200px) {
-    .btn {
-        font-size: 170px;
-    }
-
-    .btn:hover,
-    .btn:focus {
-        font-size: 180px;
-    }
+.btnLabel {
+    display: block;
+    text-align: center;
 }
 
 @media (max-width: 860px) {
-    .btn {
-        font-size: 150px;
+    .icon {
+        font-size: 80px;
     }
-
-    .btn:hover,
-    .btn:focus {
-        font-size: 160px;
+    .btn:hover {
+        transform: translate(0, 0);
     }
 }
 
 @media (max-width: 600px) {
-    .btn {
-        font-size: 100px;
-        height: 100px;
-    }
-
-    .btn:focus,
-    .btn:hover {
-        font-size: 110px;
-    }
+    
 }

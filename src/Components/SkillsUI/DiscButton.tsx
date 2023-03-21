@@ -1,16 +1,22 @@
 import React from 'react';
 
 import styles from './DiscButton.module.css';
-import { RiCoinLine } from 'react-icons/ri';
 
 interface DiscButtonProps {
     onClick: () => void;
+    Icon: any;
+    label: string;
 }
 
-export default function DiscButton({onClick}:DiscButtonProps) {
+export default function DiscButton({onClick, Icon, label}: DiscButtonProps) {
   return (
+    <React.Fragment>
+    <div className={styles.btnCard}>
+    <label className={styles.btnLabel}>{label}</label>
     <button onClick={onClick} className={styles.btn}>
-      <RiCoinLine className={styles.icon} />
-    </button>
-  )
+        <Icon className={styles.icon} />
+      </button>
+    </div>
+    </React.Fragment>
+  );
 }
