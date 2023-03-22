@@ -18,7 +18,7 @@ export default function Project() {
     imgAlt: "Algo Example thumbnail",
     title: "Algo Example",
     desc: descriptions.algoExample,
-    techs: ["React", "Typescript", "Collaborative"],
+    techs: ["React", "TS", "Collaborative"],
     alternate: true,
     site: "https://algoexample.com",
     frontend: "https://github.com/JoshBergman/Algorithms-Explained"
@@ -29,7 +29,7 @@ export default function Project() {
     imgAlt: "A.P.I. Monitor dot dev thumbnail",
     title: "API Monitor.dev",
     desc: descriptions.apimonitor,
-    techs: ["React", "Node.js", "MongoDB", "Express.js", "Typescript"],
+    techs: ["React", "Node.js", "MongoDB", "Express.js", "TS"],
     alternate: false,
     site: "https://apimonitor.dev/",
     frontend: "https://github.com/JoshBergman/Api-Monitor-Frontend",

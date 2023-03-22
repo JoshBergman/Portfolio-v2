@@ -37,7 +37,7 @@ export default function SingleProject(ProjectDetails:ProjectProps) {
       realLink={true} 
       fontSize={buttonFontSize} 
       href={currHref}>
-        {front ? "Frontend Code" : "Backend Code"}
+        {front ? "Frontend" : "Backend"}
       </AnchorButton>
     );
   };

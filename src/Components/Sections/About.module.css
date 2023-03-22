@@ -1,28 +1,20 @@
 .aboutMeContainer {
     background-image: linear-gradient(rgb(56, 205, 208), rgb(132, 220, 224));
     width: 100%;
-    height: fit-content;
-    padding-top: 2px;
-    padding-bottom: 20px;
-}
-
-.subjectAlignmentContainer {
-    width: 45%;
-    height: fit-content;
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
 .subjectContainer {
     background-color: rgb(7, 84, 86);
-    width: 100%;
-    padding: 5px;
-    margin: 20px auto;
-    margin-bottom: 30px;
-
-    box-shadow: 0 0 8px white;
+    width: clamp(280px, 60%, 700px);
+    margin: 0 auto;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
 
-.title {
+.title, .subTitle {
     color: white;
     font-size: xx-large;
     text-decoration: underline;
@@ -30,56 +22,47 @@
     font-family: Montserrat, sans-serif;
 }
 
-.subjectTitle {
-    color: white;
+.subTitle {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.text, .textLink {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.textLink {
+    display: inline;
     text-decoration: underline;
-    font-size: large;
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 5px;
 }
 
-.text {
+.textLink:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+.arrowBtn {
+    background-color:rgb(7, 84, 86);
+    border-color: transparent;
     color: white;
-    font-size: large;
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    font-family: monospace;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    float: right;
+
+    border: 2px solid white;
+    transition: all 100ms ease-in-out
 }
 
-@media (max-width: 1600px) {
-    .subjectAlignmentContainer {
-        width: 60%;
-    }
+.arrowBtn:hover {
+    transform: translate(2px, 2px);
+    cursor: pointer;
 }
 
-@media (max-width: 1200px) {
-    .subjectAlignmentContainer {
-        width: 80%;
-    }
-    .text {
-        text-align: center;
-    }
-}
-
-@media (max-width: 800px) {
-    .subjectAlignmentContainer {
-        width: 90%;
-    }
-    .subjectContainer {
-        box-shadow: none;
-    }
-    .text {
-        width: 90%;
-    }
-}
-
-@media (max-width: 400px) {
-    .subjectAlignmentContainer {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .text {
-        width: 95%;
-    }
+.arrow {
+    transform: rotate(180deg);
 }
