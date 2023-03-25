@@ -18,4 +18,4 @@ Stack:
 ## Usage:
 
 Feel free to use this to create your own portfolio.
-_Obviously don't claim my work as yours but it's free to use._
+_Obviously don't claim any of my work as yours but it's free to use._
