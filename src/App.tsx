@@ -12,7 +12,9 @@ function App() {
   //just a lil data mining
   useEffect(() => {
     try {
-      fetch("http://too-simple-analytics.herokuapp.com/std/view/JoshPortfolio");
+      fetch(
+        "https://too-simple-analytics.herokuapp.com/std/view/JoshPortfolio"
+      );
     } catch (err) {}
   }, []);
   return (
