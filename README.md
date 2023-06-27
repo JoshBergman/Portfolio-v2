@@ -1,10 +1,12 @@
-# Joshua Bergman Portfolio
+# Joshua Bergman Portfolio V2
+
+# (V2 Outdated => see V3 [Joshua Bergman Portfolio V3](https://github.com/JoshBergman/Portfolio-V3))
 
 ##### Designed and created by Joshua Bergman
 
 ---
 
-### View live site:
+### View live site (v3 not this version):
 
 [Joshua Bergman.dev](https://joshuabergman.dev/)
 
